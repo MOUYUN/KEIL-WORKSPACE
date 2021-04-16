@@ -27,13 +27,17 @@ void delay100ms(void)   //?? 0us
 }
 
 
-unsigned char number = 0;
+
 
 void main(){
 	
-
+char number = 0;
 	
 	while(1){
+		
+		//P2 = ~number;
+		
+		
 		if(P3_1==0){
 			
 			delay100ms();
@@ -42,7 +46,7 @@ void main(){
 			P2 = ~number;
 			
 			if(number>=256){
-				number=0;
+				number=-1;
 			}
 		}
 	}

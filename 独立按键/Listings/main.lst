@@ -1,4 +1,4 @@
-C51 COMPILER V9.57.0.0   MAIN                                                              04/16/2021 15:39:18 PAGE 1   
+C51 COMPILER V9.57.0.0   MAIN                                                              04/16/2021 17:25:29 PAGE 1   
 
 
 C51 COMPILER V9.57.0.0, COMPILATION OF MODULE MAIN
@@ -37,49 +37,53 @@ line level    source
   27   1      }
   28          
   29          
-  30          unsigned char number = 0;
+  30          
   31          
   32          void main(){
   33   1              
-  34   1      
+  34   1      char number = 0;
   35   1              
   36   1              while(1){
-  37   2                      if(P3_1==0){
-  38   3                              
-  39   3                              delay100ms();
-  40   3                              
-  41   3                              number++;
-  42   3                              P2 = ~number;
-  43   3                              
-  44   3                              if(number>=256){
-  45   4                                      number=0;
-  46   4                              }
-  47   3                      }
-  48   2              }
-  49   1      
-  50   1      //      P2 = 0xFE;
-  51   1      //      P2_0 = 0;
-  52   1      //      P2_1 = 0;
-  53   1      //      while(1){
-  54   1      //              if(P3_1==0 && P3_0==0){
-C51 COMPILER V9.57.0.0   MAIN                                                              04/16/2021 15:39:18 PAGE 2   
+  37   2                      
+  38   2                      //P2 = ~number;
+  39   2                      
+  40   2                      
+  41   2                      if(P3_1==0){
+  42   3                              
+  43   3                              delay100ms();
+  44   3                              
+  45   3                              number++;
+  46   3                              P2 = ~number;
+  47   3                              
+  48   3                              if(number>=256){
+  49   4                                      number=-1;
+  50   4                              }
+  51   3                      }
+  52   2              }
+  53   1      
+  54   1      //      P2 = 0xFE;
+C51 COMPILER V9.57.0.0   MAIN                                                              04/16/2021 17:25:29 PAGE 2   
 
-  55   1      //                      //delay1s();
-  56   1      //                      P2_0 = 0;
-  57   1      //              }else{
-  58   1      //                      P2_0 = 1;
-  59   1      //              }
-  60   1      //      }
-  61   1              
-  62   1      }
+  55   1      //      P2_0 = 0;
+  56   1      //      P2_1 = 0;
+  57   1      //      while(1){
+  58   1      //              if(P3_1==0 && P3_0==0){
+  59   1      //                      //delay1s();
+  60   1      //                      P2_0 = 0;
+  61   1      //              }else{
+  62   1      //                      P2_0 = 1;
+  63   1      //              }
+  64   1      //      }
+  65   1              
+  66   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     65    ----
+   CODE SIZE        =     68    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      1    ----
+   DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
