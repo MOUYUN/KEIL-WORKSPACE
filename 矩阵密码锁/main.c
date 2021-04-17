@@ -9,6 +9,14 @@ unsigned int Password;
 
 unsigned char count;
 
+
+		
+/**
+  * @brief   
+  * @param   
+  * @retavl  
+**/
+
 void main(){
 	
 	LCD_Init();

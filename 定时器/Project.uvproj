@@ -145,7 +145,7 @@
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
             <RestoreFunctions>0</RestoreFunctions>
             <RestoreToolbox>1</RestoreToolbox>
-            <RestoreTracepoints>0</RestoreTracepoints>
+            <RestoreTracepoints>1</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
@@ -177,7 +177,7 @@
           </Flash1>
           <bUseTDR>0</bUseTDR>
           <Flash2></Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -336,7 +336,7 @@
             <DataOverlaying>1</DataOverlaying>
             <OverlayString></OverlayString>
             <MiscControls></MiscControls>
-            <DisableWarningNumbers>16</DisableWarningNumbers>
+            <DisableWarningNumbers></DisableWarningNumbers>
             <LinkerCmdFile></LinkerCmdFile>
             <Assign></Assign>
             <ReserveString></ReserveString>
@@ -368,46 +368,6 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>Delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>Delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Delay.h</FilePath>
-            </File>
-            <File>
-              <FileName>LCD1602.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\LCD1602.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD1602.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\LCD1602.h</FilePath>
-            </File>
-            <File>
-              <FileName>Nixie.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Nixie.c</FilePath>
-            </File>
-            <File>
-              <FileName>Nixie.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Nixie.h</FilePath>
-            </File>
-            <File>
-              <FileName>MatrixKey.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\MatrixKey.c</FilePath>
-            </File>
-            <File>
-              <FileName>MatrixKey.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\MatrixKey.h</FilePath>
             </File>
           </Files>
         </Group>
